@@ -3,7 +3,7 @@ import fetch from 'node-fetch';
 import csv from 'csv-parser';
 
 const router = express.Router();
-const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/XXX/pub?output=csv'; // Replace with your live CSV link
+const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/XXX/pub?output=csv'; // Replace with your actual published sheet CSV link
 
 router.get('/', async (req, res) => {
   try {
