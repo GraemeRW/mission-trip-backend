@@ -105,9 +105,8 @@
                 label: 'Target Goal (R50,000)',
                 data: Array(json.labels.length).fill(50000),
                 borderColor: 'red',
-                borderWidth: 2,
+                borderWidth: 3,
                 pointRadius: 0,
-                borderDash: [5, 5],
                 fill: false
               }
             ]
@@ -123,6 +122,7 @@
             scales: {
               y: {
                 beginAtZero: true,
+                suggestedMax: 60000,
                 ticks: {
                   callback: value => 'R' + value.toLocaleString()
                 }
