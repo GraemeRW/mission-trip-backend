@@ -11,7 +11,7 @@ router.get('/', async (req, res) => {
     if (!response.body) return res.status(500).send('No data stream');
 
     const results: any[] = [];
-    let target = null;
+    let target: number | null = null;
 
     response.body
       .pipe(csv())
